@@ -17,14 +17,43 @@
   - film viewer `https://www.familysearch.org/search/film/<DGS>?i=<image-1>`
 - Most films are **not** indexed; reading them image by image is normal.
 
-## ДАЧО — State Archive of Chernihiv Oblast
+## Oblast state archives (ДАО) — choose by the place, not by habit
+
+Parish registers, confession registers and revision lists of a governorate
+are usually held by the **state archive of the oblast that covers the place
+today**: ДАЧО for Chernihiv, ДАКО for Kyiv, ДАПО for Poltava, ДАХО for
+Kharkiv, ДАЖО for Zhytomyr, ДАЛО for Lviv, and so on. Never assume ДАЧО:
+it is only the archive of the worked example below.
+
+- **Find the right archive.** Take the archive named in the FamilySearch
+  catalog item for the place (the archive reference names it), and the
+  list of oblast archives on the State Archival Service site
+  (archives.gov.ua). Check border changes: a village of the old Chernihiv
+  governorate may now be in Sumy oblast or in Russia; Kyiv governorate
+  villages may now be in Cherkasy oblast; Galicia (Austrian until 1918)
+  goes to ЦДІАЛ (Lviv) and the western oblast archives, with Greek
+  Catholic, Roman Catholic and Jewish registers instead of consistory
+  books.
+- **What to look for on its website:** a catalog or list of metric books
+  by church and year, scanned описи (finding aids), its own digitized
+  cases, and its rules for requests and fees.
+- **Fond numbers differ between archives.** The consistory, treasury
+  chamber and district treasury fonds have different numbers in every
+  oblast archive. Read them from that archive's опис or the FamilySearch
+  catalog; do not reuse the Chernihiv numbers below for another region.
+- If an archive has no online catalog, record that in the source map and
+  plan an archive request (`archive-request` skill) rather than guessing.
+
+## Worked example: ДАЧО — State Archive of Chernihiv Oblast
+
+Use these facts only for places of the former Chernihiv governorate.
 
 - Digital repository ("хмара"): `y2lmcmetyxjjaa.cg.gov.ua` — open
   directory listing (browse folders in a browser or fetch the listing).
   Contains scanned **описи** (finding aids) under `/!_ОПИСИ/`, its own
   scans of many confession registers, and the «Каталог метричних книг»
   (which church, which year, which справа, and whether it survived).
-- Key fonds for the Chernihiv governorate:
+- Key fonds for the Chernihiv governorate (Chernihiv only):
   - **ф. 679** Chernihiv Spiritual Consistory — metric books (оп. 10 for
     1880s–1910s of many districts; оп. 1, 4, 9, 14 older), confession
     registers (сповідні розписи), 1782 clergy revision (оп. 5).

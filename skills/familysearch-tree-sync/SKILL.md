@@ -2,7 +2,7 @@
 name: familysearch-tree-sync
 description: "This skill should be used when adding or changing people, relationships or sources in the person's FamilySearch family tree based on research findings. Trigger on \"додай у дерево\", \"внеси в FamilySearch\", \"прикріпи джерело\", \"додай дітей / братів / дружину\", \"перевір дублікати в дереві\", \"update my tree\", \"attach this record\", \"перевір джерела\", \"дивне джерело\", \"прикріпи реальні сторінки\".\n"
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Updating the FamilySearch tree

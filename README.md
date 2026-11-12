@@ -20,12 +20,12 @@
 | Компонент | Що робить |
 |---|---|
 | skill `rodovid-case` | Оркеструє дослідження: питання → карта джерел → пошук → читання → перевірка → реєстр доказів → нотатка → дерево / архів. Містить 12 перевірених шаблонів міркувань |
-| skill `source-map-ua` | Карта джерел: ДАЧО, ЦДІАК, FamilySearch (DGS), що збереглося і що лише в архіві; прийоми роботи з FamilySearch |
+| skill `source-map-ua` | Карта джерел: обласний архів за місцем пошуку (ДАЧО, ДАКО, ДАПО…), ЦДІАК, FamilySearch (DGS), що збереглося і що лише в архіві; прийоми роботи з FamilySearch |
 | skill `metric-index-search` | Python-скрипти для xlsx-індексів метрик: пошук з варіантами прізвищ та імен, реконструкція родин, покриття, QA транскрипцій |
 | skill `scan-transcribe` | Читання сканів (дореформена орфографія, кирилічні числа, стани), схема індексу, запис у xlsx |
 | skill `evidence-ledger` | Реєстр доказів у xlsx з кольорами рівнів і перевірками |
 | skill `familysearch-tree-sync` | Зміни в дереві FamilySearch лише з джерелом і за згодою |
-| skill `archive-request` | Чернетка запиту до ДАЧО / ЦДІАК |
+| skill `archive-request` | Чернетка запиту до обласного архіву за місцем пошуку або до ЦДІАК |
 | agent `source-scout` | Складає карту джерел по каталогах і описах |
 | agent `scan-reader` | Читає блок зображень паралельно з іншими читачами |
 | agent `evidence-verifier` | Сліпе перечитування і рев'ю висновків |
@@ -65,6 +65,35 @@ FamilySearch потрібен ваш акаунт і браузер (Claude in C
 - Багато фондів онлайн немає; плагін допомагає швидко це встановити і
   скласти точний запит до архіву.
 - Живих людей не досліджуємо й не публікуємо.
+- Детальні довідки про фонди (номери, каталоги, хмара) поки є лише для
+  Чернігівщини (ДАЧО). Для інших областей агент сам визначає потрібний
+  обласний архів і шукає його фонди й описи.
+
+## Data handling
+
+The plugin has no server of its own and sends nothing to the publisher.
+
+**Personal data it reads and stores.** Names, dates, places and family
+relationships of (overwhelmingly deceased) people from archival records;
+for archive-request drafts, the user's own name and contact details. All
+of it is stored only in files on the user's machine or project: xlsx
+indexes and the evidence ledger, markdown case notes, and request drafts.
+Living people are not researched or added to shared trees.
+
+**External services it uses**, always through the user's own browser
+(Claude in Chrome or Claude's built-in browser) and the sites' normal
+pages. It never reads cookies or tokens, never calls internal APIs and
+never enters passwords:
+
+| Service | What is sent | When |
+|---|---|---|
+| FamilySearch (familysearch.org) | Search terms (names, places, years); page views of catalog items and images | Searching records and reading scans |
+| FamilySearch Family Tree | People, relationships and source citations | Only after the user explicitly approves each change |
+| Archive websites (the oblast state archive for the place, e.g. ДАЧО, ДАКО; ЦДІАК, ЦДІАЛ), Wikisource, Wikimedia Commons | Search terms and page views | Building the source inventory |
+
+Archive requests are drafted only; the user sends them themselves.
+
+Privacy: [PRIVACY.md](PRIVACY.md)
 
 ## Що нового у 0.2.0
 
@@ -95,6 +124,18 @@ FamilySearch потрібен ваш акаунт і браузер (Claude in C
   відповідають мовою людини (зазвичай українською), включно з короткими
   статусами між кроками і завданнями для субагентів. Цитати з метрик
   лишаються в оригінальному написанні.
+
+## 0.5.1
+
+- **Будь-яка область, не лише Чернігівщина.** Карта джерел, агент-розвідник
+  і запит до архіву тепер спершу визначають обласний архів, що зберігає
+  документи місця пошуку (ДАЧО, ДАКО, ДАПО, ДАХО, ДАЖО, ДАЛО…), з
+  урахуванням змін кордонів; для Галичини — ЦДІАЛ. Номери фондів ДАЧО
+  позначено як приклад лише для Чернігівщини.
+- **Політика конфіденційності** (`PRIVACY.md`) і розділ «Data handling»:
+  що плагін читає, де зберігає і які сайти використовує.
+- Плагін можна встановити прямо з GitHub (`/plugin marketplace add
+  4l1ce/rodovid`).
 
 ## 0.5.0
 

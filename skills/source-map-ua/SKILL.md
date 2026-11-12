@@ -1,8 +1,8 @@
 ---
 name: source-map-ua
-description: "This skill should be used when planning where to look for an ancestor in Ukrainian (Russian Empire / Hetmanate era) records: which archive, fond, опис and справа, which years survive, what is digitized on FamilySearch, ДАЧО or ЦДІАК, and what can only be ordered. Trigger on \"де шукати\", \"які джерела є\", \"карта джерел\", \"що є онлайн\", \"чи збереглися метрики\", \"ревізька казка\", \"сповідний розпис\", \"Румянцевський опис\", \"DGS\", \"каталог FamilySearch\", \"ДАЧО\", \"ЦДІАК\", \"where are the records for\".\n"
+description: "This skill should be used when planning where to look for an ancestor in Ukrainian (Russian Empire / Hetmanate era) records: which archive, fond, опис and справа, which years survive, what is digitized on FamilySearch, in the oblast archive that covers the place (e.g. ДАЧО for Chernihiv, ДАКО for Kyiv, ДАПО for Poltava) or in ЦДІАК, and what can only be ordered. Trigger on \"де шукати\", \"які джерела є\", \"карта джерел\", \"що є онлайн\", \"чи збереглися метрики\", \"ревізька казка\", \"сповідний розпис\", \"Румянцевський опис\", \"DGS\", \"каталог FamilySearch\", \"обласний архів\", \"ДАЧО\", \"ДАКО\", \"ДАПО\", \"ЦДІАК\", \"where are the records for\".\n"
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Source map for Ukrainian genealogy
@@ -61,8 +61,11 @@ before reading scans, and update it as reading progresses.
 3. For each, check where it is held and whether it is online, using
    `references/archives.md`:
    - FamilySearch catalog entries (item list → ф.-оп.-спр., years, DGS);
-   - ДАЧО «Каталог метричних книг» and описи in the ДАЧО cloud;
-   - ЦДІАК archium search.
+   - the state archive of the oblast that covers the place today (see
+     «Oblast state archives» in `references/archives.md`): its catalog of
+     metric books, описи and own scans, where they are online;
+   - ЦДІАК archium search (18th-century Hetmanate records), or ЦДІАЛ for
+     Galicia.
    Open the archive's own опис when a catalog title looks doubtful.
 4. Write the map as a table:
 
@@ -87,4 +90,7 @@ before reading scans, and update it as reading progresses.
 - For techniques on FamilySearch (index → scan, fast paging, catalog
   tables) read `references/familysearch-techniques.md`.
 - `references/example-borzna-vybli.md` shows a finished map for two
-  Chernihiv places; reuse its facts when the place matches.
+  Chernihiv places; reuse its facts only when the place matches. Fond
+  numbers, URLs and catalog names in it and in the ДАЧО section of
+  `references/archives.md` are Chernihiv-specific: for any other region,
+  find the oblast archive's own fonds and catalogs.

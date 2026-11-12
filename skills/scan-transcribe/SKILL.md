@@ -2,7 +2,7 @@
 name: scan-transcribe
 description: "This skill should be used when reading or transcribing scans of Ukrainian and Russian-Empire church records and censuses — metric books (метричні книги), confession registers (сповідні розписи), revision lists (ревізькі казки), the Rumyantsev Description — from photos, PDFs, FamilySearch, ДАЧО or ЦДІАК images, and when building an index workbook from them. Trigger on \"прочитай скан\", \"розшифруй запис\", \"транскрибуй\", \"що написано на зображенні\", \"перепиши двір\", \"зроби індекс метрик\", \"прочитай сторінки 120–140\", or when scan images are attached.\n"
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Transcribing record scans
@@ -99,7 +99,7 @@ handwritten scan, by you or by a sub-agent:
    guarantor with the same surname, a monthly total), say so in the note.
 4. Zoom until letters are distinct before deciding any name, patronymic
    or number that a conclusion will rest on. If the image is too poor,
-   say so and name a better copy (ДАЧО own scans, another filming).
+   say so and name a better copy (the oblast archive's own scans, another filming).
 5. Check against the monthly totals ("Итого в … месяце") and the
    numbering; report missing or duplicated numbers.
 6. For a person-search task, return only the relevant records in full

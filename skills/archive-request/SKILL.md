@@ -1,8 +1,8 @@
 ---
 name: archive-request
-description: "This skill should be used when records needed for a family search are not online and must be requested from a Ukrainian archive (ДАЧО, ЦДІАК, ДАКО or another oblast archive) — drafting a request (запит) for a genealogical search or for copies of specific cases. Trigger on \"напиши запит до архіву\", \"замовити копію справи\", \"лист до ДАЧО\", \"запит до ЦДІАК\", \"як замовити в архіві\", \"archive request\".\n"
+description: "This skill should be used when records needed for a family search are not online and must be requested from a Ukrainian archive (the state archive of the oblast that covers the place, e.g. ДАЧО, ДАКО, ДАПО; or ЦДІАК / ЦДІАЛ) — drafting a request (запит) for a genealogical search or for copies of specific cases. Trigger on \"напиши запит до архіву\", \"замовити копію справи\", \"лист до обласного архіву\", \"лист до ДАЧО\", \"запит до ЦДІАК\", \"як замовити в архіві\", \"archive request\".\n"
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Archive request (запит до архіву)
@@ -47,6 +47,11 @@ Archives answer precise requests faster and cheaper. Build the request
 from the source map and the ledger, not from scratch.
 
 ## Gather first
+- Which archive: the one that holds the cases (from the source map). For a
+  thematic search, the state archive of the oblast that covers the place
+  today (check border changes); ЦДІАК for 18th-century Hetmanate records,
+  ЦДІАЛ for Galicia. Address the request to that archive, not to ДАЧО by
+  default.
 - Exact cases if known: ф.-оп.-спр., years, арк. (from the source map).
 - Otherwise the question: person, estate, place (village, parish,
   povit, governorate as named then), years, record types wanted.

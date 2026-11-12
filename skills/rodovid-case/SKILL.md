@@ -2,7 +2,7 @@
 name: rodovid-case
 description: "This skill should be used for any multi-step family-history research in Ukrainian / Russian-Empire records: tracing an ancestor, a surname line or a village, answering \"who was the father of …\", or continuing a research case from earlier notes. It orchestrates the source map, index search, scan reading, verification, evidence ledger, case notes, tree updates and archive requests. Trigger on \"досліди рід\", \"досліди гілку\", \"знайди батька\", \"хто батьки\", \"продовжимо дослідження\", \"родовід\", \"генеалогія\", \"шукаю предків\", \"простеж лінію\", \"research my ancestor\", \"trace the family\".\n"
 metadata:
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Running a genealogy research case
