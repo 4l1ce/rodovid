@@ -1,0 +1,19 @@
+{
+  "name": "rodovid-agent",
+  "version": "0.5.0",
+  "description": "Multi-agent assistant for Ukrainian genealogy: source maps for ДАЧО / ЦДІАК / FamilySearch, metric-book index search and family reconstruction, scan transcription with QA, independent verification, evidence ledger, FamilySearch tree updates with approval, and archive requests.",
+  "author": {
+    "name": "Alisa Petivotova"
+  },
+  "keywords": [
+    "genealogy",
+    "ukraine",
+    "metric-books",
+    "familysearch",
+    "archives",
+    "родовід"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/4l1ce/rodovid",
+  "repository": "https://github.com/4l1ce/rodovid"
+}

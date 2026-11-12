@@ -1,0 +1,16 @@
+{
+  "name": "rodovid",
+  "description": "Плагіни для генеалогічних досліджень в українських архівах",
+  "owner": {
+    "name": "Alisa Petivotova"
+  },
+  "plugins": [
+    {
+      "name": "rodovid-agent",
+      "source": "./",
+      "description": "Multi-agent assistant for Ukrainian genealogy: source maps for ДАЧО / ЦДІАК / FamilySearch, metric-book index search and family reconstruction, scan transcription with QA, independent verification, evidence ledger, FamilySearch tree updates with approval, and archive requests.",
+      "category": "learning",
+      "homepage": "https://github.com/4l1ce/rodovid"
+    }
+  ]
+}
