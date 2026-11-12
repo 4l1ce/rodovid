@@ -1,0 +1,4 @@
+# Keep release / "Download ZIP" archives in the plugin-upload layout:
+# the marketplace manifest is only for `/plugin marketplace add`.
+.claude-plugin/marketplace.json export-ignore
+.gitattributes export-ignore

@@ -55,7 +55,15 @@ ledger.py         init|add|set|summary FILE
 /plugin install rodovid-agent@rodovid
 ```
 
-Або завантажте файл `.plugin` у Claude і натисніть «Install». Для роботи з
+Або як файл (Claude Desktop, claude.ai):
+
+1. Відкрийте [останній реліз](https://github.com/4l1ce/rodovid/releases/latest)
+   і завантажте `rodovid-agent-<версія>.plugin` (або `.zip` — це той самий
+   архів).
+2. Завантажте файл у Claude як плагін і натисніть «Install».
+
+Зелена кнопка GitHub «Code → Download ZIP» для цього не підходить: вона
+кладе файли в додаткову теку `rodovid-main/`. Беріть файл із релізу. Для роботи з
 FamilySearch потрібен ваш акаунт і браузер (Claude in Chrome або вбудований
 браузер Claude). Паролі агент не вводить.
 
