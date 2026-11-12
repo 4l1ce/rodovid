@@ -63,9 +63,10 @@ ledger.py         init|add|set|summary FILE
 2. Завантажте файл у Claude як плагін і натисніть «Install».
 
 Зелена кнопка GitHub «Code → Download ZIP» для цього не підходить: вона
-кладе файли в додаткову теку `rodovid-main/`. Беріть файл із релізу. Для роботи з
-FamilySearch потрібен ваш акаунт і браузер (Claude in Chrome або вбудований
-браузер Claude). Паролі агент не вводить.
+кладе файли в додаткову теку `rodovid-main/`. Беріть файл із релізу.
+
+Для роботи з FamilySearch потрібен ваш акаунт і браузер (Claude in Chrome
+або вбудований браузер Claude). Паролі агент не вводить.
 
 ## Обмеження
 
@@ -77,31 +78,31 @@ FamilySearch потрібен ваш акаунт і браузер (Claude in C
   Чернігівщини (ДАЧО). Для інших областей агент сам визначає потрібний
   обласний архів і шукає його фонди й описи.
 
-## Data handling
+## Дані та конфіденційність
 
-The plugin has no server of its own and sends nothing to the publisher.
+Плагін не має власного сервера і нічого не надсилає автору.
 
-**Personal data it reads and stores.** Names, dates, places and family
-relationships of (overwhelmingly deceased) people from archival records;
-for archive-request drafts, the user's own name and contact details. All
-of it is stored only in files on the user's machine or project: xlsx
-indexes and the evidence ledger, markdown case notes, and request drafts.
-Living people are not researched or added to shared trees.
+**Які персональні дані він читає і зберігає.** Імена, дати, місця і
+родинні зв'язки людей з архівних документів (майже всі давно померлі); для
+чернеток запитів до архіву — ваші ім'я та контакти. Усе це зберігається
+лише у файлах на вашому комп'ютері чи у вашому проєкті: xlsx-індекси й
+реєстр доказів, нотатки справи в markdown, чернетки запитів. Живих людей
+не досліджуємо і не додаємо до спільних дерев.
 
-**External services it uses**, always through the user's own browser
-(Claude in Chrome or Claude's built-in browser) and the sites' normal
-pages. It never reads cookies or tokens, never calls internal APIs and
-never enters passwords:
+**Якими зовнішніми сервісами користується** — завжди через ваш власний
+браузер (Claude in Chrome або вбудований браузер Claude) і звичайні
+сторінки сайтів. Агент ніколи не читає cookie чи токени, не викликає
+внутрішні API і не вводить паролі:
 
-| Service | What is sent | When |
+| Сервіс | Що передається | Коли |
 |---|---|---|
-| FamilySearch (familysearch.org) | Search terms (names, places, years); page views of catalog items and images | Searching records and reading scans |
-| FamilySearch Family Tree | People, relationships and source citations | Only after the user explicitly approves each change |
-| Archive websites (the oblast state archive for the place, e.g. ДАЧО, ДАКО; ЦДІАК, ЦДІАЛ), Wikisource, Wikimedia Commons | Search terms and page views | Building the source inventory |
+| FamilySearch (familysearch.org) | Пошукові запити (імена, місця, роки); перегляд сторінок каталогу і сканів | Пошук записів і читання сканів |
+| Дерево FamilySearch (Family Tree) | Люди, зв'язки і посилання на джерела | Лише після вашої явної згоди на кожну зміну |
+| Сайти архівів (обласний архів за місцем пошуку, напр. ДАЧО, ДАКО; ЦДІАК, ЦДІАЛ), Вікіджерела, Wikimedia Commons | Пошукові запити і перегляд сторінок | Складання карти джерел |
 
-Archive requests are drafted only; the user sends them themselves.
+Запити до архівів агент лише готує; надсилаєте їх ви самі.
 
-Privacy: [PRIVACY.md](PRIVACY.md)
+Політика конфіденційності: [PRIVACY.md](PRIVACY.md)
 
 ## Версії
 
