@@ -1,6 +1,6 @@
 {
   "name": "rodovid-agent",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Multi-agent assistant for Ukrainian genealogy: source maps across FamilySearch, ЦДІАК and Ukrainian oblast archives, metric-book index search and family reconstruction, scan transcription with QA, independent verification, evidence ledger, FamilySearch tree updates with approval, and archive requests.",
   "author": {
     "name": "Alisa Petivotova"

@@ -2,7 +2,7 @@
 name: source-map-ua
 description: "This skill should be used when planning where to look for an ancestor in Ukrainian (Russian Empire / Hetmanate era) records: which archive, fond, опис and справа, which years survive, what is digitized on FamilySearch, in the oblast archive that covers the place (e.g. ДАЧО for Chernihiv, ДАКО for Kyiv, ДАПО for Poltava) or in ЦДІАК, and what can only be ordered. Trigger on \"де шукати\", \"які джерела є\", \"карта джерел\", \"що є онлайн\", \"чи збереглися метрики\", \"ревізька казка\", \"сповідний розпис\", \"Румянцевський опис\", \"DGS\", \"каталог FamilySearch\", \"обласний архів\", \"ДАЧО\", \"ДАКО\", \"ДАПО\", \"ЦДІАК\", \"where are the records for\".\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Source map for Ukrainian genealogy
@@ -65,7 +65,11 @@ before reading scans, and update it as reading progresses.
      «Oblast state archives» in `references/archives.md`): its catalog of
      metric books, описи and own scans, where they are online;
    - ЦДІАК archium search (18th-century Hetmanate records), or ЦДІАЛ for
-     Galicia.
+     Galicia;
+   - **Duck Inspector** by reference code, for every case not yet known
+     to be online (batch API, «Duck Inspector» in `references/archives.md`);
+   - **printed editions and forum transcriptions** of the same record
+     («Printed editions and volunteer transcriptions»).
    Open the archive's own опис when a catalog title looks doubtful.
 4. Write the map as a table:
 
@@ -84,6 +88,12 @@ before reading scans, and update it as reading progresses.
 
 - Distinguish "not preserved" (catalog/опис says so), "not digitized"
   (exists, order it) and "not checked yet". Never collapse them.
+- **«Онлайн немає → запит» only after three checks:** FamilySearch catalog,
+  Duck Inspector, and the oblast archive's own scans (e.g. the ДАЧО cloud
+  folder «оцифровані ДАЧО»). Write which of the three were checked and
+  when. Before sending an archive request, re-run the check for every case
+  in it — cases come online, and requests have carried cases that were
+  already on FamilySearch.
 - Record DGS numbers and image ranges for anything read, so readers can
   resume exactly where they stopped.
 - Prefer the archive's own scans when FamilySearch images are damaged.

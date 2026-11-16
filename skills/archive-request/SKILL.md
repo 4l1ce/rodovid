@@ -2,7 +2,7 @@
 name: archive-request
 description: "This skill should be used when records needed for a family search are not online and must be requested from a Ukrainian archive (the state archive of the oblast that covers the place, e.g. ДАЧО, ДАКО, ДАПО; or ЦДІАК / ЦДІАЛ) — drafting a request (запит) for a genealogical search or for copies of specific cases. Trigger on \"напиши запит до архіву\", \"замовити копію справи\", \"лист до обласного архіву\", \"лист до ДАЧО\", \"запит до ЦДІАК\", \"як замовити в архіві\", \"archive request\".\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Archive request (запит до архіву)
@@ -56,6 +56,13 @@ from the source map and the ledger, not from scratch.
 - Otherwise the question: person, estate, place (village, parish,
   povit, governorate as named then), years, record types wanted.
 - What is already known and checked (so the archive does not repeat it).
+- **Is each case really offline?** Just before the request is final, check
+  every case in it again on FamilySearch, Duck Inspector and the archive's
+  own scans (`source-map-ua`). Drafts have carried cases that were already
+  online (ЦДІАК 51-3-2422) or covered another place (ДАЧО 132-2-264, 152-1-154
+  — not Borzna). For a case online only in part (e.g. a revision with the
+  town's section cut off), ask where the rest is kept instead of ordering
+  the whole case.
 - The applicant's details: name, contact, relationship to the person
   (for records under access restrictions), preferred delivery (scans).
 

@@ -2,7 +2,7 @@
 name: evidence-ledger
 description: "This skill should be used whenever a genealogical finding is recorded, graded or reviewed: deciding whether a parent–child link is confirmed, probable or a hypothesis, keeping a colour-coded evidence table, or checking what a family-tree claim rests on. Trigger on \"наскільки це певно\", \"це доведено?\", \"рівень достовірності\", \"запиши знахідку\", \"таблиця доказів\", \"реєстр доказів\", \"на чому це тримається\", \"evidence\", \"confidence level\", \"is this proven\".\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Evidence ledger
