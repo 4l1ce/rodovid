@@ -18,8 +18,14 @@ and internal описи.
    border changes), then check its catalogs and описи online; check ЦДІАК
    archium search (ЦДІАЛ for Galicia). Do not assume ДАЧО or reuse
    Chernihiv fond numbers for another region.
+   Run every reference through Duck Inspector
+   (`inspector.duckarchive.com`, public catalog API via WebFetch, ~2 s
+   between requests) and check the oblast archive's own scans folder;
+   «no copy» in the Inspector alone does not mean offline. Look for a
+   printed edition or forum transcription of early registers and censuses.
 4. Where a title is ambiguous, open the first images (title page,
-   internal опис) to confirm what the case covers.
+   internal опис) to confirm what the case covers. Archive covers and film
+   title cards can name only the first church or carry a wrong year.
 5. Classify each series: online and relevant / online, not our place /
    exists offline (order) / not preserved / unknown.
 

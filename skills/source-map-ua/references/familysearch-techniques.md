@@ -48,6 +48,20 @@ image number field) and pressing the page's own buttons (e.g. «Следующи
   "прочитано / переглянуто опис / не відкривали".
 - Catalog titles can be wrong; check the first images (title page,
   internal опис) before relying on a title.
+- The film's title card and even the archive's cover can carry the wrong
+  year: 679-1-18 is labelled «1839» on both, but its first book is Borzna
+  Troitska 1834. Trust the year written in the book's own headings and
+  annual totals.
+- A volume of metric books often holds several churches one after another;
+  the archive cover may name only the first. Map the volume by the
+  headings («Часть первая о родившихся…» and the church name) before
+  concluding that a church is missing.
+- A consistory volume of confession registers is ordered by protopopia,
+  each parish starting with «Роспись…» at the top of a right-hand page;
+  read the heading of every parish rather than guessing it from a
+  neighbouring year (1763 «село C» was Стрільники).
+- Many spreads are filmed twice; note duplicate image numbers so totals
+  are not inflated.
 
 ## Attaching sources to the tree (only after the person approves)
 - Attach an index record to a person:

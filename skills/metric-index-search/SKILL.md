@@ -2,7 +2,7 @@
 name: metric-index-search
 description: "This skill should be used when searching transcribed metric-book indexes (Excel workbooks with sheets Рождения / Браки / Смерти) for a person, surname or family, reconstructing sibships, checking which churches and months a set of indexes covers, or QA-checking a transcription workbook. Trigger on \"знайди в метриках\", \"пошукай прізвище\", \"хто з Третяків\", \"всі записи про\", \"діти Якова\", \"хрещені\", \"поручителі\", \"чи повний рік\", \"покриття метрик\", \"перевір транскрипцію\", \"search the metric index\", or when xlsx files named like \"Борзнянський повіт 1890 рік метрики.xlsx\" are attached.\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Searching metric-book indexes

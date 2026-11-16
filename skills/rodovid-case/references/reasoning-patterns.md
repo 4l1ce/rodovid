@@ -55,3 +55,27 @@ in the ledger's reasoning.
 
 12. **Name sake.** Children were often named after a grandparent; useful
     as a weak support, never as proof.
+
+13. **A corrected surname reopens every reading of it.** When a surname is
+    shown to be misread (Грушач → Грукач: «к» read as «ш»), the same reader
+    may have made the same mistake in every other source. List each record
+    where that model read the surname (other years, the Rumyantsev
+    Description, revisions) and re-read the surname blind there before any
+    link built on the old spelling is kept. Links between the old and the
+    new spelling (Грукач 1738 → «Грушак» 1766 → Грушуки) drop to
+    «гіпотеза» until then. Limit: genuine spelling drift also happens;
+    the re-reading decides, not the assumption of an error.
+
+14. **Check the timeline before choosing what to read.** Before reading a
+    year's registers for an event, place it between the dates already
+    known (last record with the first wife, first record with the second;
+    first child's birth). If the window falls outside the years to be read,
+    the search cannot find it — say so instead of reading (a marriage dated
+    1846–1849 cannot be in the 1839 and 1842 books).
+
+15. **Namesakes in a printed rehabilitation or memorial list.** A person in
+    «Реабілітовані історією» or a memorial book with the right surname,
+    place and birth year is a lead, not a link: list every candidate
+    father in the family tree with a matching given name and age, check the
+    birth in the registers of that year, and remember that a married
+    woman's surname is usually her husband's.

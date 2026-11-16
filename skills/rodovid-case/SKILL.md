@@ -2,7 +2,7 @@
 name: rodovid-case
 description: "This skill should be used for any multi-step family-history research in Ukrainian / Russian-Empire records: tracing an ancestor, a surname line or a village, answering \"who was the father of …\", or continuing a research case from earlier notes. It orchestrates the source map, index search, scan reading, verification, evidence ledger, case notes, tree updates and archive requests. Trigger on \"досліди рід\", \"досліди гілку\", \"знайди батька\", \"хто батьки\", \"продовжимо дослідження\", \"родовід\", \"генеалогія\", \"шукаю предків\", \"простеж лінію\", \"research my ancestor\", \"trace the family\".\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Running a genealogy research case
@@ -83,6 +83,11 @@ Reading images is the expensive part of a case. Go down this ladder and
 stop at the first step that answers the question (details in
 `scan-transcribe`, «Reading economy»):
 
+0. **Timeline and editions first.** Check that the event can fall in the
+   years you plan to read (reasoning pattern 14), and whether a printed
+   edition or forum transcription of the record exists (`source-map-ua`,
+   archives.md) — it gives entry numbers to open directly and an
+   independent reading.
 1. **Titles before images.** Identify a case from the archive опис,
    catalog titles and finding aids (`source-scout`, typed text). Do not
    open a film just to learn which regiment or parish it is.

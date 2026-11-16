@@ -35,6 +35,8 @@ Claude's built-in browser), using the sites' normal pages:
 | FamilySearch (familysearch.org) | Search terms (names, places, years); page views of catalog items and images | Searching records and reading scans |
 | FamilySearch Family Tree | People, relationships and source citations | Only after the user explicitly approves each change |
 | Archive websites (the oblast state archive for the place, e.g. ДАЧО, ДАКО; ЦДІАК, ЦДІАЛ), Wikisource, Wikimedia Commons | Search terms and page views | Building the source inventory |
+| Duck Inspector (inspector.duckarchive.com) | Archive reference codes (archive, fond, опис, case) — no names of people | Checking which cases have online copies |
+| Library catalogues and genealogy forums (e.g. resource.history.org.ua, genoua.name, forum.vgd.ru) | Search terms and page views | Finding printed editions and volunteer transcriptions |
 
 Each service handles this data under its own privacy policy. The plugin
 never reads cookies or session tokens, never calls a site's internal APIs

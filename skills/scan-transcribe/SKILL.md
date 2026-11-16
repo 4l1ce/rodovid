@@ -2,7 +2,7 @@
 name: scan-transcribe
 description: "This skill should be used when reading or transcribing scans of Ukrainian and Russian-Empire church records and censuses — metric books (метричні книги), confession registers (сповідні розписи), revision lists (ревізькі казки), the Rumyantsev Description — from photos, PDFs, FamilySearch, ДАЧО or ЦДІАК images, and when building an index workbook from them. Trigger on \"прочитай скан\", \"розшифруй запис\", \"транскрибуй\", \"що написано на зображенні\", \"перепиши двір\", \"зроби індекс метрик\", \"прочитай сторінки 120–140\", or when scan images are attached.\n"
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
 ---
 
 # Transcribing record scans
@@ -60,6 +60,15 @@ handwritten scan, by you or by a sub-agent:
   a second reader with `model: "opus"` on the same images, without the
   first reading. A second reading by the same model as the first does not
   count as independent.
+- **When Fable is not available** (usage limit reached mid-run, or not on
+  the plan): tell the person at once, before continuing, and let them
+  choose — wait for Fable, or go on with Opus. If they choose Opus, say
+  which blocks Opus read in the report («Перше читання: Opus (Fable
+  недоступна)»); a blind second reading of those blocks by Opus is «не
+  незалежне», so every field a conclusion rests on stays at most
+  «ймовірно» and goes to «Що лишилося» for a Fable or human reading later.
+  An independent reading by a person or a printed edition counts in place
+  of Fable.
 - **Never Sonnet or Haiku for handwriting.**
 - **Text that is already typed needs no strong reader.** Searching and
   summarising xlsx indexes, online index records (FamilySearch `1:1:`),

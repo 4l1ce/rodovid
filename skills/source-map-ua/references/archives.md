@@ -48,11 +48,26 @@ it is only the archive of the worked example below.
 
 Use these facts only for places of the former Chernihiv governorate.
 
-- Digital repository ("хмара"): `y2lmcmetyxjjaa.cg.gov.ua` — open
-  directory listing (browse folders in a browser or fetch the listing).
-  Contains scanned **описи** (finding aids) under `/!_ОПИСИ/`, its own
-  scans of many confession registers, and the «Каталог метричних книг»
-  (which church, which year, which справа, and whether it survived).
+- Digital repository ("хмара"): `y2lmcmetyxjjaa.cg.gov.ua` — a folder
+  listing behind **Cloudflare**: it opens only in the browser; WebFetch and
+  shell downloads fail (checked 16.11.2026). Large images take 3–5 s.
+  Folders:
+  - `!_ОПИСИ` — scanned **описи** (finding aids). Typewritten описи have no
+    text layer: search them by paging, not by Ctrl+F.
+  - `!_СПРАВИ (оцифровані ДАЧО)` → `1_Давніх актів` (pre-1917 fonds, e.g.
+    132, 152, 185, 679, 805) and `2_Нових актів` (Soviet fonds, e.g.
+    Р-4609, Р-8840). **The archive's own scans** — many of these cases are
+    neither on FamilySearch nor in Duck Inspector, so check this folder
+    before writing «онлайн немає». File path pattern:
+    `…/Фонд 132/Ф.132 Оп.2 Спр.348/Ф.132 Оп.2 Спр.348_00001.jpg`; some
+    cases are named after the FamilySearch film
+    (`804-03494474-l-a-w-152-1-154`).
+  - `!_СПРАВИ (оцифровані ГТ Family search)` (and `… 2023-2026`) — copies of
+    FamilySearch films, sorted by DGS.
+  - «Каталог метричних книг» (which church, which year, which справа, and
+    whether it survived), «Науково-довідковий апарат», ordering info.
+  - The folder name is the only title; open the cover image before relying
+    on it (152-1-154 turned out to be Березна, not Борзна).
 - Key fonds for the Chernihiv governorate (Chernihiv only):
   - **ф. 679** Chernihiv Spiritual Consistory — metric books (оп. 10 for
     1880s–1910s of many districts; оп. 1, 4, 9, 14 older), confession
@@ -65,6 +80,11 @@ Use these facts only for places of the former Chernihiv governorate.
   - **ф. 133** Noble deputies' assembly — noble genealogies only.
   - **ф. 185** — post-1861 lists of former serfs by landowner.
   - **ф. Р-8998** etc. — Soviet civil registry (ЗАГС) 1919–1930s.
+  - **ф. Р-8840** (case files of the repressed, оп. 1–3) and **ф. Р-4609**
+    (gubernia revolutionary tribunal, 1919–1922) — arrest files with a
+    questionnaire that lists the family. Find the case number first in the
+    regional volume of «Реабілітовані історією»; only part of the cases is
+    in the cloud, the rest are ordered.
 - Practical rule: open the **опис** (finding aid) before concluding that
   something is missing — FamilySearch catalog titles are sometimes wrong
   (e.g. Borzna Troitska "1887/1888" were in fact 1877/1878).
@@ -73,7 +93,13 @@ Use these facts only for places of the former Chernihiv governorate.
 
 - Online viewer: `archium.cdiak.archives.gov.ua` (search by fond/case or
   keyword; `file-viewer/<case>#file-<image>`). Some cases are digitized,
-  many show only «Замовити» (order a copy).
+  many show only «Замовити» (order a copy). Many ЦДІАК cases are also on
+  FamilySearch (image numbers usually match archium) and on Wikisource
+  (`Архів:ЦДІАК/<fond>/<опис>/<case>`); check Duck Inspector before
+  writing «лише в архіві».
+- Case numbers with a letter use a **capital Cyrillic «А»** (127-1015-10А,
+  127-1013-106А); with a lowercase or Latin letter, catalogs return «не
+  знайдено».
 - The viewer scales pages down; small 18th-century hands become partly
   illegible. Open the page image itself in its own browser tab and zoom
   regions there. Cite the case's «Зображення N» and the sheet (арк., Л/П).
@@ -85,10 +111,69 @@ Use these facts only for places of the former Chernihiv governorate.
     on FamilySearch (e.g. DGS 109554258 for Borzna sotnia).
   - **ф. 127** Kyiv Spiritual Consistory — confession registers of the
     18th century (e.g. 127-1016-23 Borzna protopopia 1763).
-  - **ф. 51** General Military Chancellery — petitions, court cases,
-    lists of Cossacks by sotnia (mostly undigitized).
+  - **ф. 51** General Military Chancellery — petitions, court cases and
+    lists of Cossacks by sotnia. **Опис 3 is largely online** (FamilySearch,
+    archium, Wikisource): regimental revisions 1732–1755 (e.g. Chernihiv
+    regiment 51-3-19364 for 1732 … 51-3-19356 for 1753–1755), the 1740
+    compute (51-3-19252, 19253), oaths of 1732, 1741, 1762, money and hay
+    registers, and court cases that name ordinary Cossacks. Not everything:
+    e.g. 51-3-19328 (Chernihiv regiment 1747) and 51-3-4284 (Nizhyn 1732)
+    have no online copy. The опис is on НашіПредки (incomplete list) and
+    Wikisource. Revisions are written sotnia by sotnia; find the sotnia's
+    heading first (record-types, «Hetmanate Cossack lists»).
   - **ф. 1539** — 1782 revision of Cossacks (published copies on
     Wikimedia Commons / Wikisource for some districts).
+
+## Duck Inspector — where a case is online, by reference code
+
+`inspector.duckarchive.com` is a volunteer index of online copies
+(FamilySearch, archium, Wikisource/Commons) by archive reference. It holds
+no scans and indexes no people. Run every reference in a source map through
+it before marking a case «лише в архіві» — on 15.11.2026 it found online a
+case the project had been about to order (ЦДІАК 51-3-2422).
+
+- Case page: `inspector.duckarchive.com/en/archives/<archive>/<fond>/<опис>/<case>`,
+  e.g. `/ЦДІАК/51/3/2422`. Search → Reference code (archive, fond, опис,
+  case). Archive codes: ЦДІАК, ДАЧгО (Chernihiv), ДАКО, ДАЧкО (Cherkasy),
+  ЦДІАЛ, etc.
+- Public JSON for batch checks, no login:
+  `/api/catalog/<archive>/<fond>/<опис>/<case>` (field `online_copies`).
+  It is a public catalog, not a site's internal endpoint — read it with
+  WebFetch, never with the person's browser session. Pause ~2 s between
+  requests; after ~60 in a row it answers 429.
+- Limits — do not draw conclusions from them:
+  - **No online copy listed ≠ not online.** Several ДАЧО cases on
+    FamilySearch (e.g. 132-2-113, 132-2-60) show no copy there; the ДАЧО
+    cloud's own scans are not covered at all.
+  - For ДАЧО ф. 679 the case title is only the **first church** of the case
+    (679-1-12, «Берестовець», also holds Borzna city 1824). A title that
+    names another village does not rule out your parish.
+  - Title search is fuzzy; only the case title is searchable.
+  - Large описи are served partially (ЦДІАК 51-3: first 5000 cases), so
+    paging an опис there is not a complete inventory.
+
+## Printed editions and volunteer transcriptions
+
+Check for a published transcription before reading an early register or
+census from the scan. Local historians publish whole metric books and
+confession registers with surname indexes (e.g. «Метрична книга села Виблі
+1725–1740 роки», упор. С. Горобець, 2017, full text on
+siver-litopys-library.cn.ua). Search the village name with «метрична
+книга», «сповідні розписи», «ревізія», «присяга», «переписна книга» in
+library catalogues (resource.history.org.ua, oblast universal scientific
+libraries, er.kai.edu.ua) and booksellers.
+
+- Use an edition as a **finding aid and independent reading**: it gives
+  record numbers to open on the scan and a second reading not made by a
+  model. A text extracted automatically from a site is not a reading by
+  eye — check quotes against the scan before they go into the tree.
+- A case number in an edition can differ from the catalogue (the Vybli
+  edition gives 127-1012-181, the catalogue 127-1012-85); record both
+  until the cover is checked.
+- **Forum transcriptions** (genoua.name, forum.vgd.ru — «вичитки»): good
+  leads with exact references, but they are one human reading, often
+  partial. Treat them like index rows: open the scan for anything a
+  conclusion rests on.
 
 ## Other online sources
 
